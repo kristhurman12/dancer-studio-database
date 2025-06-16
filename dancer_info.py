@@ -3,7 +3,7 @@ def dancer_info():
     last_name = input("Enter last name: ")
     age = int(input("Enter age: "))
 
-    full_name = first_name + " " + last_name
+    full_name = last_name + ", " + first_name
 
     print("\nDancer Info:")
     print("Name:", full_name)
@@ -11,6 +11,6 @@ def dancer_info():
 
     return {
         "name": full_name,
-        "age": age
+        "age": age,
     }
 dancer = dancer_info()
